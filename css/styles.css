@@ -1,0 +1,452 @@
+html{
+    font-size: 62.5%;  
+    box-sizing: border-box
+
+    
+}
+
+/*fuente principal Montserrat*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    font-size: 16px;
+    font-family: 'Montserrat',Helvetica,Arial,Lucida,sans-serif;
+    background-color: #faf4ef;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    }
+
+.header{
+        padding: 10px;
+        margin: 0px;
+        background-color:#5D6473;
+       display: flex;
+       align-items: center;
+        
+}
+.header > i{
+    display: none;
+}
+.fa-bars{
+    font-size: 5rem;
+   
+    margin-right: 20px;
+    color: #F2E2CE;
+    
+}
+.navlink{
+    text-decoration: none;
+    color: #F2E2CE;
+    padding: 1rem; 
+   
+    font-weight: bold;
+    text-transform: uppercase;
+    display: inline-block;   
+       
+}
+
+li{
+    list-style: none;
+}
+
+.navigation{
+    display: flex;
+    justify-content: end;
+    padding-left: 0rem;
+    margin: 0;     
+    width: 49%;
+    font-size: 1.4rem;  
+    font-weight: 100;   
+    
+
+}
+
+.navigation > li > ul{
+    display: none;
+    background-color: none;   
+    
+}
+.navigation >li:hover ul{
+    
+    display: block;
+    position: absolute;    
+    background-color: #5D6473;
+    
+}
+.header .navigation > li:hover{
+    background-color: #0D0D0D;
+    transition: all 0.3s ease-in-out;
+}
+
+.header .navigation > li >ul >li :hover{
+    color: #0D0D0D;
+    transition: all 0.3s ease-in-out;
+}
+
+.topNav{
+    position: sticky;
+    top: 0px;
+    z-index: 3;
+}
+
+a{
+    text-decoration: none;
+}
+
+.title{    
+    padding: 1rem 0rem 1rem 0rem;       
+    text-align: left;
+    color:#F2E2CE;    
+    width: 50%;   
+    font-weight:bold;
+    font-size: 3rem;
+}
+h1{
+    margin: 0rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+}
+h2{
+    text-transform: uppercase;
+    font-size: 4rem;    
+    max-width: 100%;
+    padding: 2rem;
+}
+
+
+.navigation-foot{
+    text-align: center;
+    background-color: #5D6473;
+    padding: 2rem;   
+    
+}
+
+.banner-container{
+    background-image: url(../img/paisaje.jpg);
+    max-width: 100%;
+    min-height: 70vh;
+    background-size:cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.banner-title{
+    max-width: 50%;
+    font-size: 1rem;
+    padding-left: 3rem;
+    color: #ecd2a0;   
+    text-transform:uppercase;
+    font-weight: 700;
+    font-size: 6rem;
+    text-shadow: 1px 1px #0D0D0D;
+    
+}
+.banner-contact{
+    background-image: url(../img/young-businesswoman-posing-with-copy-space.jpg);
+    height: 80vh;
+    width: 100%;     
+    max-height: 100%; 
+    background-size: cover; 
+    position: relative; 
+}
+.contact_clearbg{
+    
+    position: absolute;
+    max-width: 40%;
+    max-height: 60%;
+    background-color: #faf4ef;
+    right: 5%;
+    top: 10%;
+    padding: 4rem;
+}
+.contact_clearbg p{
+    margin-bottom: 2rem;
+}
+.contact_card{
+    position: relative;
+}
+.contact_card > div{
+    display: inline-block;
+    margin-bottom:0,5rem;
+    padding: 1rem;
+    
+}
+.contact_clearbg img{
+    width: 5rem;
+    
+}
+.contact_clearbg h3{
+    display: inline-block;
+    position: absolute;
+    top: 5%;
+    left: 15%;
+}
+
+.innerBanner{
+    height: 60vh;
+}
+
+.btn{
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 16px 34px;
+    line-height: 1;
+    border-radius: 2rem;
+    margin-left: 3rem;
+    transition: all 0.3s ease-in-out;
+    background-color: #0D0D0D;
+    color: #F2E2CE;
+    width: 6rem;
+   
+}
+.btn:hover{
+    background-color:#F2E2CE;
+    color: #0D0D0D;
+}
+
+.services {
+    padding: 2rem;
+  
+}
+
+.about {
+    padding: 2rem;
+    margin: 0rem;
+    
+    flex-direction: row;
+    align-items: center;
+}
+.about div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about h1{
+ text-align: center;
+ font-size: 5rem;    
+}
+.about__p{
+    max-width: 40%;
+    
+    margin-right: 2rem;
+    
+}
+.about__img{
+    max-width: 40%;
+   
+}
+.subtitle{
+    padding: 4rem;
+    text-align: center;
+    font-size: 2rem;
+    text-transform: uppercase;    
+   }
+.motivation{
+   display: flex;
+   justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/smiling-young-employee-giving-presentation-working-with-flipchart-meeting-room.png);
+    padding: 3rem;
+    margin-bottom: 0px;
+    opacity: 100%;  
+}
+
+
+.motivation__wrd{
+    color: #ecd2a0;  
+    font-size: 5rem;
+    text-shadow: 1px 1px #0D0D0D;
+    
+
+}
+.card__container{
+    
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+   
+    padding: 2rem;
+    text-align: center;
+    width: 30vw;
+ 
+}
+.card__img{
+    width: 10rem;
+    height: 10rem;
+}
+ .card__ttl{
+    margin: 1rem;
+    font-size: 2rem;
+}
+
+.contactForm{
+    
+    text-align: center;
+    border: 0px;    
+    width: 100%;    
+}
+.contactForm input{
+    margin-bottom: 1rem;
+    padding: 2rem;
+    width: 30vw;
+    font-size: 1,5rem;
+}
+.contactForm textarea{
+    margin-bottom: 1rem;
+    padding: 2rem;
+    width: 63.8%;
+    height: 20rem;
+    font-size: 1.5rem;
+    font-family: 'Montserrat',Helvetica,Arial,Lucida,sans-serif;
+
+}
+
+.contactForm .contactForm__btn{
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 16px 34px;
+    line-height: 1;
+    border-radius: 2rem;  
+    transition: all 0.3s ease-in-out;
+    background-color: #0D0D0D;
+    color: #F2E2CE;
+    width: 20rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;    
+   
+}
+
+
+
+.map iframe{
+    display: block;
+   margin-top: 2rem;
+    max-height: 30rem;
+    width: 100vw;
+    
+}
+
+@media(max-width:1000px){
+    .navigation{
+        position: fixed;
+        right: -3000px;
+        flex-direction: column;
+        background-color:#5D6473;
+        width: 30vw;
+    }
+    .header > i{
+        display: block;
+    }
+    .fa-bars:hover + .navigation{
+       right: 0px;
+      top: 0rem;
+    }
+    
+    .navigation:hover{
+        right: 0px;
+        top:0rem;
+    }
+    .header{
+        justify-content: space-between;
+    }
+    .title{
+        font-size: 2rem;
+    }
+    
+    h1{
+        margin: 0rem;
+        padding-left: 2rem;
+        padding-right: 4rem;
+    }
+    .navigation >li > ul{
+        margin-left: 1rem;
+        display: flex;
+        flex-direction: column;
+        position: absolute;    
+        background-color: #5D6473;
+        
+    }
+    .banner-container{
+        background-image: url(../img/paisaje.jpg);
+        max-width: 100%;
+        min-height: 40vh;
+        background-size:cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding-bottom: 3rem;
+    }
+
+    .about {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about h2{
+      
+        text-align: center;
+    }
+    
+    .about div{
+        display: flex;
+        flex-direction: column ;
+    }
+    
+    .about__p{
+        
+        max-width: 100%;    
+        margin-right: 0rem;
+        padding: 2rem;
+    }
+    .about__img{
+       
+        
+        max-width: 90%;
+        max-height: 100%;
+    }
+    
+    .banner-title{       
+        font-size: 3rem;
+        width: 50%;
+        top: 25vh;
+        color: #F2E2CE;        
+    }
+    .banner-container .btn{
+        top:50vh;
+    }
+
+    .card__container{
+        display: flex;
+        flex-direction: column;
+        
+        text-align: center;
+    }
+    .card{
+       display: flex;
+       flex-direction: column;
+        margin-top: 2rem;
+       
+        padding: 2rem;
+        text-align: center;
+        width: 50vw;
+     
+    }
+}
+@media(max-width:475px){
+    .title{
+        font-size: 1.5rem;
+    }
+}
