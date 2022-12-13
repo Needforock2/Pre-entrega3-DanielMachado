@@ -248,7 +248,7 @@ h2{
 .motivation{
    display: flex;
    justify-content: center;
-    width: 100%;
+    
     height: 100%;
     background-image: url(../img/smiling-young-employee-giving-presentation-working-with-flipchart-meeting-room.png);
     padding: 3rem;
@@ -357,7 +357,7 @@ h2{
     }
     
     .navigation:hover{
-        right: 5px;
+        right: 0px;
         top:0rem;
     }
     .header{
