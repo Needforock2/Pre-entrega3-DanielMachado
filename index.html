@@ -11,12 +11,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Document</title>
 </head>
-<body class="container">
-    <header class="topNav"  >
-        <div class="header">
-            <a  class="title" href="index.html"><h1>NombrePagina</h1></a>
+<body class="container-fluid">
+    <header class="container-fluid topNav"  >
+        <!-- <div class="row header">
+            <a  class="title col-md-6 col-lg-5" href="index.html"><h1>Sara Cabrera</h1></a>
             <i class="fa-solid fa-bars"></i>
-            <ul class="navigation"> 
+            <ul class="navigation col-md-6 col-lg-7 "> 
                 <li><a class="navlink"href="coaching.html">Coaching</a></li>  
                 <li><a class="navlink"href="about.html">Acerca de</a></li>
                 <li><a class="navlink"href="services.html">Servicios </a>
@@ -25,7 +25,46 @@
                 <li><a class="navlink"href="review.html">Reseñas</a></li>
                 <li><a class="navlink"href="contact.html">Contacto</a> </li>           
             </ul>
-        </div> 
+        </div>  -->
+
+        <div class="pos-f-t  header">
+            <div class="d-flex flex-row justify-content-between align-items-center">
+                <a  class="title col-md-6 col-lg-5" href="index.html"><h1>Sara Cabrera</h1></a>
+                <div class=" navigation ">
+                    <ul class="d-flex flex-row justify-content-end align-items-center" > 
+                        <li><a class="navlink"href="coaching.html">Coaching</a></li>  
+                        <li><a class="navlink"href="about.html">Acerca de</a></li>
+                        <li><a class="navlink"href="services.html">Servicios </a>
+                          
+                        </li>      
+                        <li><a class="navlink"href="review.html">Reseñas</a></li>
+                        <li><a class="navlink"href="contact.html">Contacto</a> </li>           
+                    </ul>
+                </div>
+                <nav class="navbar navbar-dark">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                </nav>
+            </div>
+            <div>                
+                  <div class="collapse" id="navbarToggleExternalContent">
+                      <div class=" p-4 row align-items-center justify-content-center ">
+                          <ul class="col-md-6 d-flex flex-column col-lg-7  justify-content-center align-items-center" > 
+                              <li><a class="navlink"href="coaching.html">Coaching</a></li>  
+                              <li><a class="navlink"href="about.html">Acerca de</a></li>
+                              <li><a class="navlink"href="services.html">Servicios </a>
+                                
+                              </li>      
+                              <li><a class="navlink"href="review.html">Reseñas</a></li>
+                              <li><a class="navlink"href="contact.html">Contacto</a> </li>           
+                          </ul>
+                      </div>
+                  </div>
+            </div>
+          
+           
+        </div>
         
 
     </header>
@@ -43,9 +82,9 @@
             <h2>
                 Qué es el coaching ontológico
             </h2>
-                <div>
-                    <p class="about__p"> io dolor libero temporibus? Rem, ipsam nobis non quae cupiditate laboriosam eos fugit. quibusdam voluptatem at autem harum eveniet aliquam et pariatur dolore maxime minus corporis tenetur obcaecati vitae! Nostrum nihil obcaecati unde officiis aspernatur vero tempore ullam! Iure repellat illo praesentium magnam nam sit officiis amet aliquid molestiae aliquam reiciendis laborum eos recusandae debitis harum ipsa blanditiis provident alias ducimus modi animi possimus, quam fugit? Unde molestiae consectetur velit, veniam assumenda quas magnam expedita reprehenderit quae, esse dolorum labore enim. Non totam dolore officia, at maiores necessitatibus dolorem optio dolor libero temporibus? Rem, ipsam nobis non quae cupiditate laboriosam eos fugit.</p>                    
-                    <img class="about__img" src="./img/smiling-young-employee-giving-presentation-working-with-flipchart-meeting-room (1).jpg" alt="">
+                <div class="row align-items-center justify-content-around">
+                    <p class="col-md-4"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita, culpa illum doloremque sed aperiam molestias porro modi accusamus eligendi tempore sunt perspiciatis molestiae perferendis tenetur nesciunt ducimus nihil iste dolore asperiores error, fugit ad. Quam similique doloribus facere laborum aperiam ad cum blanditiis reprehenderit, molestias nihil quisquam illo? Quia, ut</p>                    
+                    <img class="col-md-4" src="./img/smiling-young-employee-giving-presentation-working-with-flipchart-meeting-room (1).jpg" alt="">
                 
                 </div>
         </section>
@@ -58,9 +97,9 @@
             <h2 >
                 Acerca de mi
             </h2>
-            <div>
-                <p class="about__p">aliquid molestiae aliquam reiciendis laborum eos recusandae debitis harum ipsa blanditiis provident alias ducimus modi animi possimus, quam fugit? Unde molestiae consectetur velit, veniam assumenda quas magnam expedita reprehenderit quae, esse dolorum labore enim. Non totam dolore officia, at maiores necessitatibus dolorem optio dolor libero temporibus? Rem, ipsam nobis non quae cupiditate laboriosam eos fugit. quibusdam voluptatem at autem harum eveniet aliquam et pariatur dolore maxime minus corporis tenetur obcaecati vitae! Nostrum nihil obcaecati unde officiis aspernatur vero tempore ullam! Iure repellat illo praesentium magnam nam sit officiis amet aliquid molestiae aliquam reiciendis laborum eos recusandae debitis harum ipsa blanditiis provident alias ducimus modi animi possimus, quam fugit? Unde molestiae consectetur velit, veniam assumenda quas magnam expedita reprehenderit quae, esse dolorum labore enim. Non totam dolore officia, at maiores necessitatibus dolorem optio dolor libero temporibus? Rem, ipsam nobis non quae cupiditate laboriosam eos fugit.</p>                    
-                <img class="about__img" src="./img/talk-accountants.jpg" alt="">
+            <div class="row row align-items-center justify-content-around">
+                <p class="col-md-4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet doloremque distinctio ipsum sapiente iure. Ducimus ex deleniti ipsa perferendis blanditiis illum magnam at aspernatur quisquam dolorem quam dolorum id, voluptas, porro ullam a atque culpa debitis. Praesentium, provident est? Repellendus maiores veritatis odit, in ut quo dolorum facere repudiandae inventore.</p>                    
+                <img class="col-md-4" src="./img/talk-accountants.jpg" alt="">
                 
             </div>
             
@@ -71,7 +110,7 @@
             <h2>
                 Servicios
             </h2>
-            <div class="card__container">
+            <div class="row justify-content-center">
                 <div class="card">
                     <img class="card__img" src="./icons/001-puzzle.png" alt="">
                     <h2 class="card__ttl">Servicio 1</h2>
@@ -100,7 +139,7 @@
             <h2>
                 Reseñas
             </h2>
-            <div class="card__container">
+            <div class="row justify-content-center">
                 <div class="card">
                     <img class="card__img" src="./icons/003-complain.png" alt="">
                     <h2 class="card__ttl">Reseña 1</h2>

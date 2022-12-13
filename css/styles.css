@@ -1,9 +1,3 @@
-html{
-    font-size: 62.5%;  
-    box-sizing: border-box
-
-    
-}
 
 /*fuente principal Montserrat*/
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
@@ -13,17 +7,30 @@ body{
     font-family: 'Montserrat',Helvetica,Arial,Lucida,sans-serif;
     background-color: #faf4ef;
 }
+html{
+    font-size: 62.5%;  
+    box-sizing: border-box;
+    
+    font-family: 'Montserrat',Helvetica,Arial,Lucida,sans-serif;
+    
+    
+}
+a{
+    text-decoration: none !important;
+}
 
 *{
     margin: 0;
     padding: 0;
     }
 
+.container-fluid{
+    padding: 0;
+}
 .header{
         padding: 10px;
         margin: 0px;
-        background-color:#5D6473;
-       display: flex;
+        background-color:#5D6473;       
        align-items: center;
         
 }
@@ -52,14 +59,9 @@ li{
     list-style: none;
 }
 
-.navigation{
-    display: flex;
-    justify-content: end;
-    padding-left: 0rem;
-    margin: 0;     
-    width: 49%;
-    font-size: 1.4rem;  
-    font-weight: 100;   
+.navigation >ul{
+    margin-bottom: 0px;
+      
     
 
 }
@@ -76,7 +78,16 @@ li{
     background-color: #5D6473;
     
 }
-.header .navigation > li:hover{
+
+a:hover{
+    color: #F2E2CE;
+}
+
+.navigation> ul > li:hover{
+    background-color: #0D0D0D;
+    transition: all 0.3s ease-in-out;
+}
+.p-4 > ul > li:hover{
     background-color: #0D0D0D;
     transition: all 0.3s ease-in-out;
 }
@@ -84,6 +95,11 @@ li{
 .header .navigation > li >ul >li :hover{
     color: #0D0D0D;
     transition: all 0.3s ease-in-out;
+    
+}
+.header .navigation > li >ul >li >a{
+    color: #F2E2CE;
+    
 }
 
 .topNav{
@@ -92,22 +108,21 @@ li{
     z-index: 3;
 }
 
-a{
-    text-decoration: none;
-}
+
 
 .title{    
     padding: 1rem 0rem 1rem 0rem;       
-    text-align: left;
+    
     color:#F2E2CE;    
-    width: 50%;   
+    width: 60%;   
     font-weight:bold;
     font-size: 3rem;
 }
 h1{
     margin: 0rem;
-    padding-left: 4rem;
+    padding-left: 3rem;
     padding-right: 4rem;
+    font-size: 5rem;
 }
 h2{
     text-transform: uppercase;
@@ -220,25 +235,12 @@ h2{
     flex-direction: row;
     align-items: center;
 }
-.about div{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+
 .about h1{
  text-align: center;
  font-size: 5rem;    
 }
-.about__p{
-    max-width: 40%;
-    
-    margin-right: 2rem;
-    
-}
-.about__img{
-    max-width: 40%;
-   
-}
+
 .subtitle{
     padding: 4rem;
     text-align: center;
@@ -259,7 +261,7 @@ h2{
 
 .motivation__wrd{
     color: #ecd2a0;  
-    font-size: 5rem;
+    font-size: 4rem;
     text-shadow: 1px 1px #0D0D0D;
     
 
@@ -272,18 +274,18 @@ h2{
     
 }
 .card{
-    display: flex;
-    flex-direction: column;
-    margin-top: 2rem;
-   
+    
+    margin: 2rem 0.5rem;   
     padding: 2rem;
     text-align: center;
     width: 30vw;
+    border-radius: 1rem;
  
 }
 .card__img{
     width: 10rem;
     height: 10rem;
+    margin: 1rem auto;
 }
  .card__ttl{
     margin: 1rem;
@@ -340,6 +342,12 @@ h2{
 
 }
 
+.navbar{
+    display: none;
+}
+
+
+
 @media(max-width:1000px){
     .navigation{
         position: fixed;
@@ -351,10 +359,15 @@ h2{
     .header > i{
         display: block;
     }
-    .fa-bars:hover + .navigation{
-       right: 0px;
-      top: 0rem;
+   
+    .navbar{
+        display: block;
     }
+    .navbar-toggler-icon{
+        width: 4rem;
+        height: 4rem;
+    }
+   
     
     .navigation:hover{
         right: 0px;
@@ -370,7 +383,8 @@ h2{
     h1{
         margin: 0rem;
         padding-left: 2rem;
-        padding-right: 4rem;
+        padding-right: 1rem;
+        font-size: 4rem;
     }
     .navigation >li > ul{
         margin-left: 1rem;
@@ -391,33 +405,9 @@ h2{
         padding-bottom: 3rem;
     }
 
-    .about {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .about h2{
-      
-        text-align: center;
-    }
     
-    .about div{
-        display: flex;
-        flex-direction: column ;
-    }
     
-    .about__p{
-        
-        max-width: 100%;    
-        margin-right: 0rem;
-        padding: 2rem;
-    }
-    .about__img{
-       
-        
-        max-width: 90%;
-        max-height: 100%;
-    }
+ 
     
     .banner-title{       
         font-size: 3rem;
@@ -429,12 +419,7 @@ h2{
         top:50vh;
     }
 
-    .card__container{
-        display: flex;
-        flex-direction: column;
-        
-        text-align: center;
-    }
+ 
     .card{
        display: flex;
        flex-direction: column;
@@ -442,7 +427,7 @@ h2{
        
         padding: 2rem;
         text-align: center;
-        width: 50vw;
+        width: 80vw;
      
     }
 }
