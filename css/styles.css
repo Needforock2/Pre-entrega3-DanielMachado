@@ -335,8 +335,9 @@ h2{
     display: block;
    margin-top: 2rem;
     max-height: 30rem;
-    width: 100vw;
+    width: 99vw;
     
+
 }
 
 @media(max-width:1000px){
