@@ -87,6 +87,10 @@ a:hover{
     background-color: #0D0D0D;
     transition: all 0.3s ease-in-out;
 }
+.p-4 > ul > li{
+    text-align: center;
+    width: 15rem;
+}
 .p-4 > ul > li:hover{
     background-color: #0D0D0D;
     transition: all 0.3s ease-in-out;
@@ -106,9 +110,22 @@ a:hover{
     position: sticky;
     top: 0px;
     z-index: 3;
+    
+}
+.navbar-dark .navbar-toggler{
+    border: none;
+    color: #F2E2CE;
+    
+    
 }
 
 
+
+
+
+.nav-inferior{
+    border-top: solid 1px #F2E2CE;
+}
 
 .title{    
     padding: 1rem 0rem 1rem 0rem;       
@@ -144,9 +161,7 @@ h2{
     max-width: 100%;
     min-height: 70vh;
     background-size:cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    
 }
 .banner-title{
     max-width: 50%;
@@ -221,6 +236,7 @@ h2{
 .btn:hover{
     background-color:#F2E2CE;
     color: #0D0D0D;
+    width: 13rem;
 }
 
 .services {
@@ -275,7 +291,7 @@ h2{
 }
 .card{
     
-    margin: 2rem 0.5rem;   
+    margin: 2rem auto;   
     padding: 2rem;
     text-align: center;
     width: 30vw;
@@ -346,6 +362,18 @@ h2{
     display: none;
 }
 
+.carousel-control-next-icon,
+.carousel-control-prev-icon,
+.carousel-indicators > li{
+    filter: invert(100%);
+    
+}
+.carousel-control-next{
+    right: 20%;
+}
+.carousel-control-prev{
+    left: 20%;
+}
 
 
 @media(max-width:1000px){
@@ -366,6 +394,7 @@ h2{
     .navbar-toggler-icon{
         width: 4rem;
         height: 4rem;
+        
     }
    
     
@@ -419,7 +448,12 @@ h2{
         top:50vh;
     }
 
- 
+    .carousel-control-next{
+        right: -5%;
+    }
+    .carousel-control-prev{
+        left: -5%;
+    }
     .card{
        display: flex;
        flex-direction: column;
