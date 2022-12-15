@@ -1,91 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Template Style -->
-    <link rel="stylesheet" href="css/styles.css" />
-    <title>Document</title>
-</head>
-<body class="container">
-    <header class="topNav"  >
-        <div class="header">
-            <a  class="title" href="index.html"><h1>NombrePagina</h1></a>
-            <ul class="navigation"> 
-                <li><a class="navlink"href="coaching.html">Coaching</a></li>  
-                <li><a class="navlink"href="about.html">Acerca de</a></li>
-                <li><a class="navlink"href="services.html">Servicios </a>
-                    <ul>
-                        <li><a class="navlink" href="">Servicio 1</a></li>
-                        <li><a class="navlink" href="">Servicio 2</a></li>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--  bootstrap -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+         <!-- Template Style -->
+        <link rel="stylesheet" href="css/styles.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <title>Document</title>
+    </head>
+<body class="container-fluid">
+    <header class="container-fluid topNav"  > 
+
+        <div class="pos-f-t  header">
+            <div class="nav-superior d-flex flex-row justify-content-between align-items-center">
+                <a  class="title col-md-6 col-lg-5" href="index.html"><h1>Sara Cabrera</h1></a>
+                <div class=" navigation col-md-6 col-lg-7">
+                    <ul class="d-flex flex-row justify-content-end align-items-center" > 
+                        <li><a class="navlink"href="coaching.html">Coaching</a></li>  
+                        <li><a class="navlink"href="about.html">Acerca de</a></li>
+                        <li><a class="navlink"href="services.html">Servicios </a>
+                          
+                        </li>      
+                        <li><a class="navlink"href="review.html">Reseñas</a></li>
+                        <li><a class="navlink"href="contact.html">Contacto</a> </li>           
                     </ul>
-                </li>      
-                <li><a class="navlink"href="review.html">Reseñas</a></li>
-                <li><a class="navlink"href="contact.html">Contacto</a> </li>           
-            </ul>
-        </div> 
-        
+                </div>
+                <nav class="navbar navbar-dark">
+                    <i class="fa-solid fa-bars navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation""></i>
+                  </nav>
+            </div>
+            <div>                
+                  <div class="collapse nav-inferior" id="navbarToggleExternalContent">
+                      <div class=" p-4 row align-items-center justify-content-center ">
+                          <ul class="col-md-6 d-flex flex-column col-lg-7  justify-content-center align-items-center" > 
+                              <li><a class="navlink"href="coaching.html">Coaching</a></li>  
+                              <li><a class="navlink"href="about.html">Acerca de</a></li>
+                              <li><a class="navlink"href="services.html">Servicios </a>
+                                
+                              </li>      
+                              <li><a class="navlink"href="review.html">Reseñas</a></li>
+                              <li><a class="navlink"href="contact.html">Contacto</a> </li>           
+                          </ul>
+                      </div>
+                  </div>
+            </div>           
+        </div>      
 
     </header>
-
     <main>
         <section >        
-            <div class="banner-container">
-                <div class="banner-contact">
-                    <div>
-                        <div class="contact_clearbg">
+            
+                <div class=" row">
+                    <h2 class="col-12 mx-4">Contactar</h2>   
+                    <div class=" col-12 row justify-content-around align-items-center">
+                        <img class="contact_image col12 col-md-5 m-3" src="./assets/img/young-businesswoman-posing-with-copy-space.jpg" alt="">
+                        
+                        <div class="contact_clearbg col12  col-md-5 m-3">
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo, ea.</p>
-                            <div class="contact_card">
-                                <img src="./icons/placeholder.png" alt="">
-                                <div>
+                            <div class="row align-items-center">
+                                <img class="w-70 h-70 col-2"   src="./assets/icons/placeholder.png" alt="">
+                                <div class="col-8">
                                     <h3>Dirección</h3>
                                     <p>Lorem ipsum dolor sit.</p>
                                 </div>                                
                             </div>
-                            <div class="contact_card">
-                                <img src="./icons/call.png" alt="">
-                                <div>
+                            <div class="row align-items-center">
+                                <img class="w-75 h-75 col-2" src="./assets/icons/call.png" alt="">
+                                <div class="col-8">
                                     <h3>Teléfono</h3>
                                     <p>Lorem ipsum dolor sit.</p>
                                 </div>
                             </div>
-                            <div class="contact_card">
-                                <img src="./icons/envelope.png" alt="">
-                                <div>
+                            <div class="row align-items-center">
+                                <img class="w-75 h-75 col-2" src="./assets/icons/envelope.png" alt="">
+                                <div class="col-8">
                                     <h3>E-Mail</h3>
                                     <p>Lorem ipsum dolor sit.</p>
                                 </div>       
-                            </div>
+                            </div>                          
                             
-                            
-                        </div>
-                        
+                        </div>   
                     </div>
-
                 </div>
-                <h2 class="banner-title">Contactar</h2>
-                 
-            </div>   
-
+      
         </section>
         <section>
+            
             <div class="subtitle">
-                <h2>Contacto</h2>
+                <h2>Envíame un mensaje</h2>
             </div>
-            <form action="" method="get" class="contactForm">                                                    
-                    <input type="text" name="nombre" id="" placeholder="Nombre" >              
-                    <input type="text" name="apellido" id="" placeholder="Apellido">
-                    <br>
-                    <input type="email" name="mail" id="" placeholder="Email" >              
-                    <input type="tel" name="phone" id="" placeholder="Teléfono">
-                    <br>
-                    <textarea name="mensaje" id=""  placeholder="Mensaje"></textarea>
-                    
-                    <input class="contactForm__btn" type="submit" value="Enviar">  
-                  
-                               
-             </form>
+                <form class="container d-flex flex-column">
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                        <label for="inputEmail4">Nombre</label>
+                        <input type="text" class="form-control" id="inputEmail4" placeholder="Nombre">
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label for="inputPassword4">Apellido</label>
+                        <input type="text" class="form-control" id="inputPassword4" placeholder="Apellido">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="inputAddress">Correo</label>
+                      <input type="text" class="form-control" id="inputAddress" placeholder="E-Mail">
+                    </div>
+                    <div class="form-group">
+                      <label for="inputAddress2">Mensaje</label>
+                      <textarea type="text" class="form-control" id="inputAddress2" placeholder="Mensaje"></textarea>
+                    </div>
+                   <div class="row justify-content-end align-items-center">
+                    <button type="submit" class="contactForm__btn ">Enviar</button>
+                   </div>
+                   
+                </form>
+           
         </section>
        <div>
             <div class="map">
@@ -108,6 +139,9 @@
     </nav>
 
     </header>
-    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  
 </body>
 </html>

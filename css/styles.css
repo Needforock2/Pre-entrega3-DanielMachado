@@ -60,10 +60,7 @@ li{
 }
 
 .navigation >ul{
-    margin-bottom: 0px;
-      
-    
-
+    margin-bottom: 0px;     
 }
 
 .navigation > li > ul{
@@ -71,12 +68,10 @@ li{
     background-color: none;   
     
 }
-.navigation >li:hover ul{
-    
+.navigation >li:hover ul{    
     display: block;
     position: absolute;    
-    background-color: #5D6473;
-    
+    background-color: #5D6473;    
 }
 
 a:hover{
@@ -102,27 +97,18 @@ a:hover{
     
 }
 .header .navigation > li >ul >li >a{
-    color: #F2E2CE;
-    
+    color: #F2E2CE;    
 }
 
 .topNav{
     position: sticky;
     top: 0px;
-    z-index: 3;
-    
+    z-index: 100;    
 }
 .navbar-dark .navbar-toggler{
     border: none;
     color: #F2E2CE;
-    
-    
 }
-
-
-
-
-
 .nav-inferior{
     border-top: solid 1px #F2E2CE;
 }
@@ -152,19 +138,45 @@ h2{
 .navigation-foot{
     text-align: center;
     background-color: #5D6473;
-    padding: 2rem;   
-    
+    padding: 2rem;       
 }
 
 .banner-container{
-    background-image: url(../img/paisaje.jpg);
+    background-image: url(../assets/img/paisaje.jpg);
     max-width: 100%;
     min-height: 70vh;
     background-size:cover;
     
 }
-.banner-title{
-    max-width: 50%;
+.banner-container-review{
+    background-image: url(../assets/img/happy-diverse-business-partners-closing-deal.jpg);
+    max-width: 100%;
+    min-height: 70vh;
+    background-size:cover;
+    
+}
+.banner-container-services{
+    background-image: url(../assets/img/business-training.jpg);
+    max-width: 100%;
+    min-height: 70vh;
+    background-size:cover;
+    
+}
+.banner-container-about{
+    background-image: url(../assets/img/coach-by-whiteboard.jpg);
+    max-width: 100%;
+    min-height: 70vh;
+    background-size:cover;
+    
+}
+.banner-container-coaching{
+    background-image: url(../assets/img/aerial-view-business-team.jpg);
+    max-width: 100%;
+    min-height: 70vh;
+    background-size:cover;
+    
+}
+.banner-title{    
     font-size: 1rem;
     padding-left: 3rem;
     color: #ecd2a0;   
@@ -174,43 +186,31 @@ h2{
     text-shadow: 1px 1px #0D0D0D;
     
 }
-.banner-contact{
-    background-image: url(../img/young-businesswoman-posing-with-copy-space.jpg);
-    height: 80vh;
-    width: 100%;     
-    max-height: 100%; 
-    background-size: cover; 
-    position: relative; 
+.contact_image{
+    padding: 0;
+    max-width: 80%;
 }
-.contact_clearbg{
+.contact_clearbg{  
     
-    position: absolute;
-    max-width: 40%;
-    max-height: 60%;
-    background-color: #faf4ef;
-    right: 5%;
-    top: 10%;
-    padding: 4rem;
+    border-radius: .5rem; 
+    background-color: #ffffff;
+    max-width: 80%;
+    padding: 2rem;
 }
 .contact_clearbg p{
-    margin-bottom: 2rem;
+    margin: 0;
 }
-.contact_card{
-    position: relative;
+.contact_clearbg div{
+    margin-top: 1rem;
 }
-.contact_card > div{
-    display: inline-block;
-    margin-bottom:0,5rem;
-    padding: 1rem;
-    
-}
+
 .contact_clearbg img{
-    width: 5rem;
-    
+    max-width: 30%;
+    max-height: 30%;    
 }
 .contact_clearbg h3{
-    display: inline-block;
-    position: absolute;
+    
+    
     top: 5%;
     left: 15%;
 }
@@ -238,18 +238,13 @@ h2{
     color: #0D0D0D;
     width: 13rem;
 }
-
 .services {
     padding: 2rem;
   
 }
-
 .about {
     padding: 2rem;
-    margin: 0rem;
-    
-    flex-direction: row;
-    align-items: center;
+    margin: 0rem; 
 }
 
 .about h1{
@@ -264,11 +259,8 @@ h2{
     text-transform: uppercase;    
    }
 .motivation{
-   display: flex;
-   justify-content: center;
-    
     height: 100%;
-    background-image: url(../img/smiling-young-employee-giving-presentation-working-with-flipchart-meeting-room.png);
+    background-image: url(../assets/img/smiling-young-employee-giving-presentation-working-with-flipchart-meeting-room.png);
     padding: 3rem;
     margin-bottom: 0px;
     opacity: 100%;  
@@ -278,19 +270,10 @@ h2{
 .motivation__wrd{
     color: #ecd2a0;  
     font-size: 4rem;
-    text-shadow: 1px 1px #0D0D0D;
-    
+    text-shadow: 1px 1px #0D0D0D;   
+}
 
-}
-.card__container{
-    
-    text-align: center;
-    display: flex;
-    flex-wrap: wrap;
-    
-}
-.card{
-    
+.card{    
     margin: 2rem auto;   
     padding: 2rem;
     text-align: center;
@@ -307,55 +290,30 @@ h2{
     margin: 1rem;
     font-size: 2rem;
 }
-
-.contactForm{
-    
-    text-align: center;
-    border: 0px;    
-    width: 100%;    
-}
-.contactForm input{
-    margin-bottom: 1rem;
-    padding: 2rem;
-    width: 30vw;
-    font-size: 1,5rem;
-}
-.contactForm textarea{
-    margin-bottom: 1rem;
-    padding: 2rem;
-    width: 63.8%;
-    height: 20rem;
-    font-size: 1.5rem;
-    font-family: 'Montserrat',Helvetica,Arial,Lucida,sans-serif;
-
+.form-control{
+    padding: 1rem;
 }
 
-.contactForm .contactForm__btn{
+
+.contactForm__btn{
     font-size: 14px;
     text-transform: uppercase;
     font-weight: bold;
     padding: 16px 34px;
     line-height: 1;
-    border-radius: 2rem;  
+    border-radius: 1.5rem;  
     transition: all 0.3s ease-in-out;
     background-color: #0D0D0D;
     color: #F2E2CE;
     width: 20rem;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;    
-   
-}
-
-
+    margin-right: 1.5rem;
+  }
 
 .map iframe{
     display: block;
    margin-top: 2rem;
     max-height: 30rem;
     width: 99vw;
-    
-
 }
 
 .navbar{
@@ -378,11 +336,7 @@ h2{
 
 @media(max-width:1000px){
     .navigation{
-        position: fixed;
-        right: -3000px;
-        flex-direction: column;
-        background-color:#5D6473;
-        width: 30vw;
+        display: none;
     }
     .header > i{
         display: block;
@@ -397,7 +351,6 @@ h2{
         
     }
    
-    
     .navigation:hover{
         right: 0px;
         top:0rem;
@@ -415,28 +368,14 @@ h2{
         padding-right: 1rem;
         font-size: 4rem;
     }
-    .navigation >li > ul{
-        margin-left: 1rem;
-        display: flex;
-        flex-direction: column;
-        position: absolute;    
-        background-color: #5D6473;
-        
-    }
+   
     .banner-container{
-        background-image: url(../img/paisaje.jpg);
+        background-image: url(../assets/img/paisaje.jpg);
         max-width: 100%;
-        min-height: 40vh;
-        background-size:cover;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
+        min-height: 50vh;
+        background-size:cover;       
         padding-bottom: 3rem;
-    }
-
-    
-    
- 
+    }  
     
     .banner-title{       
         font-size: 3rem;
@@ -449,20 +388,15 @@ h2{
     }
 
     .carousel-control-next{
-        right: -5%;
+        right: 10%;
     }
     .carousel-control-prev{
-        left: -5%;
+        left: 10%;
     }
-    .card{
-       display: flex;
-       flex-direction: column;
-        margin-top: 2rem;
-       
-        padding: 2rem;
-        text-align: center;
-        width: 80vw;
-     
+    .card{       
+        margin-top: 2rem;       
+        padding: 2rem;       
+        width: 60vw;     
     }
 }
 @media(max-width:475px){
