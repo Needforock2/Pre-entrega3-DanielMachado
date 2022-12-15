@@ -150,6 +150,7 @@ h2{
 
 .banner-container{
     background-image: url(../assets/img/paisaje.jpg);
+    background-position-x: center;
     max-width: 100%;
     min-height: 70vh;
     background-size:cover;
@@ -157,6 +158,7 @@ h2{
 }
 .banner-container-review{
     background-image: url(../assets/img/happy-diverse-business-partners-closing-deal.jpg);
+    background-position-x: center;
     max-width: 100%;
     min-height: 70vh;
     background-size:cover;
@@ -164,6 +166,7 @@ h2{
 }
 .banner-container-services{
     background-image: url(../assets/img/business-training.jpg);
+    background-position-x: center;
     max-width: 100%;
     min-height: 70vh;
     background-size:cover;
@@ -171,6 +174,7 @@ h2{
 }
 .banner-container-about{
     background-image: url(../assets/img/coach-by-whiteboard.jpg);
+    background-position-x: center;
     max-width: 100%;
     min-height: 70vh;
     background-size:cover;
@@ -178,6 +182,7 @@ h2{
 }
 .banner-container-coaching{
     background-image: url(../assets/img/aerial-view-business-team.jpg);
+    background-position-x: center;
     max-width: 100%;
     min-height: 70vh;
     background-size:cover;
@@ -191,6 +196,7 @@ h2{
     font-weight: 700;
     font-size: 6rem;
     text-shadow: 1px 1px #0D0D0D;
+    max-width: 50%;
     
 }
 .contact_image{
