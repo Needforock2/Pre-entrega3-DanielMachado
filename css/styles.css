@@ -68,11 +68,7 @@ li{
     background-color: none;   
     
 }
-.navigation >li:hover ul{    
-    display: block;
-    position: absolute;    
-    background-color: #5D6473;    
-}
+
 
 a:hover{
     color: #F2E2CE;
@@ -133,12 +129,23 @@ h2{
     max-width: 100%;
     padding: 2rem;
 }
-
-
+.row {
+    margin:0px;
+  }
 .navigation-foot{
     text-align: center;
+    color: #F2E2CE;
     background-color: #5D6473;
-    padding: 2rem;       
+    padding: 4rem 2rem; 
+      
+}
+.navigation-foot .navlink{
+    font-size: 1rem;
+    padding: 1rem 0 ;
+}
+.navigation-foot > div > ul > li:hover{
+    background-color: #0D0D0D;
+    transition: all 0.3s ease-in-out;
 }
 
 .banner-container{
@@ -262,8 +269,9 @@ h2{
     height: 100%;
     background-image: url(../assets/img/smiling-young-employee-giving-presentation-working-with-flipchart-meeting-room.png);
     padding: 3rem;
-    margin-bottom: 0px;
+    margin-bottom: 0 auto;
     opacity: 100%;  
+    max-width: 100%;
 }
 
 
