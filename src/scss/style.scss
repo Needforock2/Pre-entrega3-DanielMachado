@@ -1,0 +1,305 @@
+/*fuente principal Montserrat*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import "body.scss";
+@import "header.scss";
+
+html{
+    font-size: 62.5%;    
+    font-family: 'Montserrat',Helvetica,Arial,Lucida,sans-serif;    
+}
+a{
+    text-decoration: none !important;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-fluid{
+    padding: 0;
+}
+
+.fa-bars{
+    font-size: 4rem;   
+    margin-right: 20px;
+    color: #F2E2CE;
+    
+}
+.navlink{
+    text-decoration: none;
+    color: #F2E2CE;
+    padding: 1rem;   
+    font-weight: bold;
+    text-transform: uppercase;
+    display: inline-block;   
+       
+}
+
+li{
+    list-style: none;
+}
+
+
+
+
+
+a:hover{
+    color: #F2E2CE;
+}
+
+
+.p-4 {
+    > ul {
+            > li{
+                text-align: center;
+                width: 15rem;
+                &:hover{
+                    background-color: #0D0D0D;
+                    transition: all 0.3s ease-in-out;
+                }
+            }
+}
+}
+
+
+.nav-inferior{
+    border-top: solid 1px #F2E2CE;
+}
+
+h2{
+    text-transform: uppercase;
+    font-size: 4rem;    
+    max-width: 100%;
+    padding: 2rem;
+}
+.row {
+    margin:0px;
+  }
+.navigation-foot{
+    text-align: center;
+    color: #F2E2CE;
+    background-color: #5D6473;
+    padding: 4rem 2rem; 
+    .navlink{
+        font-size: 1rem;
+        padding: 1rem 0 ;
+    }
+    > div {
+        > ul {
+            > li{
+                &:hover{
+                    background-color: #0D0D0D;
+                    transition: all 0.3s ease-in-out;
+                }
+            }
+        }
+    }
+}   
+.banner-container{
+    background-position-x: center;
+    max-width: 100%;
+    min-height: 70vh;
+    background-size:cover;
+    @media(max-width:1000px){        
+        max-height: 50vh;              
+        padding-bottom: 3rem;
+    }  
+ 
+}
+
+.banner-bg{
+    background-image: url(/assets/img/paisaje.jpg);
+    @extend .banner-container;   
+    
+}
+.banner-bg-review{
+    background-image: url(/assets/img/happy-diverse-business-partners-closing-deal.jpg);
+    @extend .banner-container; 
+}
+.banner-bg-services{
+    background-image: url(/assets/img/business-training.jpg);
+    @extend .banner-container; 
+    
+}
+.banner-bg-about{
+    background-image: url(/assets/img/coach-by-whiteboard.jpg);
+    @extend .banner-container; 
+    
+}
+.banner-bg-coaching{
+    background-image: url(/assets/img/aerial-view-business-team.jpg);
+    @extend .banner-container; 
+    
+}
+.banner-title{    
+    font-size: 1rem;
+    padding-left: 3rem;
+    color: #ecd2a0;   
+    text-transform:uppercase;
+    font-weight: 700;
+    font-size: 6rem;
+    text-shadow: 1px 1px #0D0D0D;
+    max-width: 50%;
+    @media(max-width:1000px){
+        font-size: 4rem;
+        width: 50%;        
+        color: #F2E2CE;        
+        }    
+}
+.contact_image{
+    padding: 0;
+    max-width: 80%;
+}
+.contact_clearbg{  
+    
+    border-radius: .5rem; 
+    background-color: #ffffff;
+    max-width: 80%;
+    padding: 2rem;
+    p{
+        margin: 0;
+    }
+    div{
+        margin-top: 1rem;
+    }
+    img{
+        max-width: 30%;
+        max-height: 30%;    
+    }
+    h3{
+        top: 5%;
+        left: 15%;
+    }
+}
+
+
+.btn{
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 16px 34px;
+    line-height: 1;
+    border-radius: 2rem;
+    margin-left: 3rem;
+    transition: all 0.3s ease-in-out;
+    background-color: #0D0D0D;
+    color: #F2E2CE;
+    width: 6rem;
+    &:hover{
+        background-color:#F2E2CE;
+        color: #0D0D0D;
+        width: 13rem;        
+    }
+   
+}
+
+.services {
+    padding: 2rem;
+  
+}
+.about {
+    padding: 2rem;
+    margin: 0rem; 
+    h1{
+        text-align: center;
+        font-size: 5rem;    
+       }
+}
+
+
+
+.subtitle{
+    padding: 4rem;
+    text-align: center;
+    font-size: 2rem;
+    text-transform: uppercase;    
+   }
+.motivation{
+    height: 100%;
+    background-image: url(/assets/img/smiling-young-employee-giving-presentation-working-with-flipchart-meeting-room.png);
+    padding: 3rem;
+    margin-bottom: 0 auto;
+    opacity: 100%;  
+    max-width: 100%;
+}
+
+
+.motivation__wrd{
+    color: #ecd2a0;  
+    font-size: 4rem;
+    text-shadow: 1px 1px #0D0D0D;   
+}
+
+.card{    
+    margin: 2rem auto;   
+    padding: 2rem;
+    text-align: center;
+    width: 30vw;
+    border-radius: 1rem;
+    @media(max-width:1000px){       
+        margin-top: 2rem;       
+        padding: 2rem;       
+        width: 60vw;     
+    }
+ 
+}
+.card__img{
+    width: 10rem;
+    height: 10rem;
+    margin: 1rem auto;
+}
+ .card__ttl{
+    margin: 1rem;
+    font-size: 2rem;
+}
+.form-control{
+    padding: 1rem;
+}
+
+
+.contactForm__btn{
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 16px 34px;
+    line-height: 1;
+    border-radius: 1.5rem;  
+    transition: all 0.3s ease-in-out;
+    background-color: #0D0D0D;
+    color: #F2E2CE;
+    width: 20rem;
+    margin-right: 1.5rem;
+  }
+
+.map iframe{
+    display: block;
+    margin-top: 2rem;
+    max-height: 30rem;
+    width: 50vw;
+    @media(max-width:1000px){
+        width: 100vw;
+    }
+}
+
+
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon,
+.carousel-indicators > li{
+    filter: invert(100%);
+    
+}
+.carousel-control-next{
+    right: 20%;
+    @media(max-width:1000px){
+        right: 10%;
+    }
+}
+.carousel-control-prev{
+    left: 20%;
+    @media(max-width:1000px){ 
+        left: 10%;
+    }
+}
