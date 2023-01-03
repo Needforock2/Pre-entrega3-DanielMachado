@@ -1,7 +1,7 @@
 {
-  "name": "proyecto-2da-entrega",
+  "name": "proyecto-3ra-entrega",
   "version": "1.0.0",
-  "description": "",
+  "description": "implementacion de npm, sass asi como SEO",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

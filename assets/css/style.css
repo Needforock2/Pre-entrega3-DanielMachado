@@ -63,6 +63,59 @@ body {
   border: none;
   color: #f2e2ce; }
 
+.navigation-foot {
+  text-align: center;
+  color: #f2e2ce;
+  background-color: #5d6473;
+  padding: 4rem 2rem; }
+  .navigation-foot .navlink {
+    font-size: 1rem;
+    padding: 1rem 0; }
+  .navigation-foot > div > ul > li:hover {
+    background-color: #0d0d0d;
+    transition: all 0.3s ease-in-out; }
+
+.btn {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 16px 34px;
+  line-height: 1;
+  border-radius: 2rem;
+  margin-left: 3rem;
+  transition: all 0.3s ease-in-out;
+  background-color: #0d0d0d;
+  color: #f2e2ce;
+  width: 6rem; }
+  .btn:hover {
+    background-color: #f2e2ce;
+    color: #0d0d0d;
+    width: 13rem; }
+
+.card {
+  margin: 2rem auto;
+  padding: 2rem;
+  text-align: center;
+  width: 40vw;
+  border-radius: 1rem; }
+  @media (max-width: 1000px) {
+    .card {
+      margin-top: 2rem;
+      padding: 2rem;
+      width: 85vw; } }
+  .card p {
+    max-width: 90%;
+    margin: 1rem auto; }
+
+.card__img {
+  width: 10rem;
+  height: 10rem;
+  margin: 1rem auto; }
+
+.card__ttl {
+  margin: 1rem;
+  font-size: 2rem; }
+
 html {
   font-size: 62.5%;
   font-family: "Montserrat", Helvetica, Arial, Lucida, sans-serif; }
@@ -115,18 +168,6 @@ h2 {
 
 .row {
   margin: 0px; }
-
-.navigation-foot {
-  text-align: center;
-  color: #f2e2ce;
-  background-color: #5d6473;
-  padding: 4rem 2rem; }
-  .navigation-foot .navlink {
-    font-size: 1rem;
-    padding: 1rem 0; }
-  .navigation-foot > div > ul > li:hover {
-    background-color: #0d0d0d;
-    transition: all 0.3s ease-in-out; }
 
 .banner-container, .banner-bg, .banner-bg-review, .banner-bg-services, .banner-bg-about, .banner-bg-coaching {
   background-position-x: center;
@@ -189,23 +230,6 @@ h2 {
     top: 5%;
     left: 15%; }
 
-.btn {
-  font-size: 14px;
-  text-transform: uppercase;
-  font-weight: bold;
-  padding: 16px 34px;
-  line-height: 1;
-  border-radius: 2rem;
-  margin-left: 3rem;
-  transition: all 0.3s ease-in-out;
-  background-color: #0d0d0d;
-  color: #f2e2ce;
-  width: 6rem; }
-  .btn:hover {
-    background-color: #f2e2ce;
-    color: #0d0d0d;
-    width: 13rem; }
-
 .services {
   padding: 2rem; }
 
@@ -234,30 +258,6 @@ h2 {
   color: #ecd2a0;
   font-size: 4rem;
   text-shadow: 1px 1px #0d0d0d; }
-
-.card {
-  margin: 2rem auto;
-  padding: 2rem;
-  text-align: center;
-  width: 40vw;
-  border-radius: 1rem; }
-  @media (max-width: 1000px) {
-    .card {
-      margin-top: 2rem;
-      padding: 2rem;
-      width: 90vw; } }
-  .card p {
-    max-width: 90%;
-    margin: 1rem auto; }
-
-.card__img {
-  width: 10rem;
-  height: 10rem;
-  margin: 1rem auto; }
-
-.card__ttl {
-  margin: 1rem;
-  font-size: 2rem; }
 
 .form-control {
   padding: 1rem; }

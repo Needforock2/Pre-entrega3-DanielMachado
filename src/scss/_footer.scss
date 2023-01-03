@@ -1,0 +1,20 @@
+.navigation-foot {
+    text-align: center;
+    color: #f2e2ce;
+    background-color: #5d6473;
+    padding: 4rem 2rem;
+    .navlink {
+      font-size: 1rem;
+      padding: 1rem 0;
+    }
+    > div {
+      > ul {
+        > li {
+          &:hover {
+            background-color: #0d0d0d;
+            transition: all 0.3s ease-in-out;
+          }
+        }
+      }
+    }
+}
