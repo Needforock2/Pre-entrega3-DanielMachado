@@ -181,23 +181,23 @@ h2 {
 }
 
 .banner-bg {
-  background-image: url(/assets/img/paisaje.jpg);
+  background-image: url(../img/paisaje.jpg);
 }
 
 .banner-bg-review {
-  background-image: url(/assets/img/happy-diverse-business-partners-closing-deal.jpg);
+  background-image: url(../img/happy-diverse-business-partners-closing-deal.jpg);
 }
 
 .banner-bg-services {
-  background-image: url(/assets/img/business-training.jpg);
+  background-image: url(../img/business-training.jpg);
 }
 
 .banner-bg-about {
-  background-image: url(/assets/img/coach-by-whiteboard.jpg);
+  background-image: url(../img/coach-by-whiteboard.jpg);
 }
 
 .banner-bg-coaching {
-  background-image: url(/assets/img/aerial-view-business-team.jpg);
+  background-image: url(../img/aerial-view-business-team.jpg);
 }
 
 .banner-title {
