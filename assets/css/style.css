@@ -180,19 +180,19 @@ h2 {
       padding-bottom: 3rem; } }
 
 .banner-bg {
-  background-image: url(/assets/img/paisaje.jpg); }
+  background-image: url(../assets/img/paisaje.jpg); }
 
 .banner-bg-review {
-  background-image: url(/assets/img/happy-diverse-business-partners-closing-deal.jpg); }
+  background-image: url(../assets/img/happy-diverse-business-partners-closing-deal.jpg); }
 
 .banner-bg-services {
-  background-image: url(/assets/img/business-training.jpg); }
+  background-image: url(../assets/img/business-training.jpg); }
 
 .banner-bg-about {
-  background-image: url(/assets/img/coach-by-whiteboard.jpg); }
+  background-image: url(../assets/img/coach-by-whiteboard.jpg); }
 
 .banner-bg-coaching {
-  background-image: url(/assets/img/aerial-view-business-team.jpg); }
+  background-image: url(../assets/img/aerial-view-business-team.jpg); }
 
 .banner-title {
   font-size: 1rem;
@@ -248,7 +248,7 @@ h2 {
 
 .motivation {
   height: 100%;
-  background-image: url(/assets/img/smiling-young-employee-giving-presentation-working-with-flipchart-meeting-room.png);
+  background-image: url(../assets/img/smiling-young-employee-giving-presentation-working-with-flipchart-meeting-room.png);
   padding: 3rem;
   margin-bottom: 0 auto;
   opacity: 100%;
