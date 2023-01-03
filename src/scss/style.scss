@@ -130,9 +130,13 @@ h2 {
   text-shadow: 1px 1px #0d0d0d;
   max-width: 50%;
   @media (max-width: 1000px) {
+    margin: 0 auto;
+    align-items: center;
     font-size: 4rem;
-    width: 50%;
-    color: #f2e2ce;
+    max-width: 90%;
+ 
+    
+    
   }
 }
 .contact_image {
@@ -216,12 +220,16 @@ h2 {
   margin: 2rem auto;
   padding: 2rem;
   text-align: center;
-  width: 30vw;
+  width: 40vw;
   border-radius: 1rem;
   @media (max-width: 1000px) {
     margin-top: 2rem;
     padding: 2rem;
-    width: 60vw;
+    width: 90vw;
+  }
+  p{
+    max-width: 90%;
+    margin: 1rem auto;
   }
 }
 .card__img {
@@ -268,12 +276,12 @@ h2 {
 .carousel-control-next {
   right: 20%;
   @media (max-width: 1000px) {
-    right: 10%;
+    right: 0%;
   }
 }
 .carousel-control-prev {
   left: 20%;
   @media (max-width: 1000px) {
-    left: 10%;
+    left: 0%;
   }
 }
