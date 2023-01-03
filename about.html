@@ -1,103 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!--  bootstrap -->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-         <!-- Template Style -->
-         <link rel="stylesheet" href="assets/css/style.css" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <title>Document</title>
-    </head>
-<body class="container-fluid">
-    <header class="container-fluid topNav"  > 
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!--  bootstrap -->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+			integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+			crossorigin="anonymous" />
+		<!-- Template Style -->
+		<link rel="stylesheet" href="assets/css/style.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+			integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer" />
+		<title>Document</title>
+	</head>
+	<body class="container-fluid">
+		<header class="container-fluid topNav">
+			<div class="pos-f-t header">
+				<div
+					class="nav-superior d-flex flex-row justify-content-between align-items-center">
+					<a class="title col-8 col-md-8 col-lg-5" href="index.html"
+						><h1>Sara Cabrera</h1></a
+					>
+					<div class="navigation col-4 col-md-4 col-lg-7">
+						<ul class="d-flex flex-row justify-content-end align-items-center">
+							<li><a class="navlink" href="coaching.html">Coaching</a></li>
+							<li><a class="navlink" href="about.html">Acerca de</a></li>
+							<li><a class="navlink" href="services.html">Servicios </a></li>
+							<li><a class="navlink" href="review.html">Reseñas</a></li>
+							<li><a class="navlink" href="contact.html">Contacto</a></li>
+						</ul>
+					</div>
+					<nav class="navbar navbar-dark">
+						<i
+							class="fa-solid fa-bars navbar-toggler"
+							type="button"
+							data-toggle="collapse"
+							data-target="#navbarToggleExternalContent"
+							aria-controls="navbarToggleExternalContent"
+							aria-expanded="false"
+							aria-label="Toggle navigation"></i>
+					</nav>
+				</div>
+				<div>
+					<div class="collapse nav-inferior" id="navbarToggleExternalContent">
+						<div class="p-4 row align-items-center justify-content-center">
+							<ul
+								class="col-md-6 d-flex flex-column col-lg-7 justify-content-center align-items-center">
+								<li><a class="navlink" href="coaching.html">Coaching</a></li>
+								<li><a class="navlink" href="about.html">Acerca de</a></li>
+								<li><a class="navlink" href="services.html">Servicios </a></li>
+								<li><a class="navlink" href="review.html">Reseñas</a></li>
+								<li><a class="navlink" href="contact.html">Contacto</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
 
-        <div class="pos-f-t  header">
-            <div class="nav-superior d-flex flex-row justify-content-between align-items-center">
-                <a  class="title col-8 col-md-8 col-lg-5" href="index.html"><h1>Sara Cabrera</h1></a>
-                <div class=" navigation col-4 col-md-4 col-lg-7">
-                    <ul class="d-flex flex-row justify-content-end align-items-center" > 
-                        <li><a class="navlink"href="coaching.html">Coaching</a></li>  
-                        <li><a class="navlink"href="about.html">Acerca de</a></li>
-                        <li><a class="navlink"href="services.html">Servicios </a>
-                          
-                        </li>      
-                        <li><a class="navlink"href="review.html">Reseñas</a></li>
-                        <li><a class="navlink"href="contact.html">Contacto</a> </li>           
-                    </ul>
-                </div>
-                <nav class="navbar navbar-dark">
-                    <i class="fa-solid fa-bars navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation""></i>
-                  </nav>
-            </div>
-            <div>                
-                  <div class="collapse nav-inferior" id="navbarToggleExternalContent">
-                      <div class=" p-4 row align-items-center justify-content-center ">
-                          <ul class="col-md-6 d-flex flex-column col-lg-7  justify-content-center align-items-center" > 
-                              <li><a class="navlink"href="coaching.html">Coaching</a></li>  
-                              <li><a class="navlink"href="about.html">Acerca de</a></li>
-                              <li><a class="navlink"href="services.html">Servicios </a>
-                                
-                              </li>      
-                              <li><a class="navlink"href="review.html">Reseñas</a></li>
-                              <li><a class="navlink"href="contact.html">Contacto</a> </li>           
-                          </ul>
-                      </div>
-                  </div>
-            </div>           
-        </div>      
+		<main>
+			<section>
+				<div class="banner-bg-about d-flex flex-column justify-content-center">
+					<h2 class="banner-title">Acerca de mi</h2>
+					<a class="btn" href="contact.html">Agenda</a>
+				</div>
+			</section>
 
-    </header>
-
-    <main>
-        <section >        
-            <div class="banner-bg-about d-flex flex-column justify-content-center">
-               
-                <h2 class="banner-title">Acerca de mi</h2>
-                <a class="btn" href="contact.html">Agenda</a>     
-            </div>   
-
-        </section>
-       
-        <section id= "about" class="about row">
-         
-            <div class="col-12 row align-items-center justify-content-around">
-                <p class="col-md-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora beatae optio, cumque nobis perspiciatis dignissimos possimus error tempore officiis, quasi aliquid, dolorem sequi quas earum. Et voluptate reprehenderit, doloribus provident earum molestias rem aspernatur doloremque eos excepturi soluta consectetur ipsam illum mollitia ut magni minima ab fuga deserunt placeat non.</p>                    
-                <img class="col-md-5" src="./assets/img/talk-accountants.jpg" alt="">
-    
-            </div>
-            
-        </section>
-
-       
-       
-    </main>
-    <header class="foot" >
-            
-        <nav class="navigation-foot container-fluid row align-items-center justify-content-between">
-            <div class="col-12 col-sm-12 col-md-3 p-4">
-                <h3 class="m-0">Direccion</h3>
-                <p class="m-0">Lorem ipsum dolor sit amet.</p>
-            </div>            
-            <div class=" col-12 col-sm-12 col-md-8">
-                <ul class="row justify-content-end align-items-right" > 
-                    <li class="col-12 col-md-2"><a class="navlink"href="coaching.html">Coaching</a></li>  
-                    <li class="col-12 col-md-2"><a class="navlink"href="about.html">Acerca de</a></li>
-                    <li class="col-12 col-md-2"><a class="navlink"href="services.html">Servicios </a>
-                    
-                    </li>      
-                    <li class="col-12 col-md-2"><a class="navlink"href="review.html">Reseñas</a></li>
-                    <li class="col-12 col-md-2"><a class="navlink"href="contact.html">Contacto</a> </li>           
-                </ul>
-            </div>            
-        </nav>
-
-    </header>
-     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  
-</body>
+			<section id="about" class="about row">
+				<div class="col-12 row align-items-center justify-content-around">
+					<p class="col-md-5">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+						beatae optio, cumque nobis perspiciatis dignissimos possimus error
+						tempore officiis, quasi aliquid, dolorem sequi quas earum. Et
+						voluptate reprehenderit, doloribus provident earum molestias rem
+						aspernatur doloremque eos excepturi soluta consectetur ipsam illum
+						mollitia ut magni minima ab fuga deserunt placeat non.
+					</p>
+					<img
+						class="col-md-5"
+						src="./assets/img/talk-accountants.jpg"
+						alt="" />
+				</div>
+			</section>
+		</main>
+		<header class="foot">
+			<nav
+				class="navigation-foot container-fluid row align-items-center justify-content-between">
+				<div class="col-12 col-sm-12 col-md-3 p-4">
+					<h3 class="m-0">Direccion</h3>
+					<p class="m-0">Lorem ipsum dolor sit amet.</p>
+				</div>
+				<div class="col-12 col-sm-12 col-md-8">
+					<ul class="row justify-content-end align-items-right">
+						<li class="col-12 col-md-2">
+							<a class="navlink" href="coaching.html">Coaching</a>
+						</li>
+						<li class="col-12 col-md-2">
+							<a class="navlink" href="about.html">Acerca de</a>
+						</li>
+						<li class="col-12 col-md-2">
+							<a class="navlink" href="services.html">Servicios </a>
+						</li>
+						<li class="col-12 col-md-2">
+							<a class="navlink" href="review.html">Reseñas</a>
+						</li>
+						<li class="col-12 col-md-2">
+							<a class="navlink" href="contact.html">Contacto</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+		<script
+			src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+			integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+			crossorigin="anonymous"></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+			integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+			crossorigin="anonymous"></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+			integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+			crossorigin="anonymous"></script>
+	</body>
 </html>
