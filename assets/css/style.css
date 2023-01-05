@@ -123,16 +123,16 @@ body {
 
 .card {
   margin: 2rem auto;
-  padding: 2rem;
+  padding: 1rem;
   text-align: center;
   width: 40vw;
   border-radius: 1rem;
-  box-shadow: 6px 7px 6px 1px rgba(0, 0, 0, 0.1); }
+  box-shadow: 4px 7px 7px 1px rgba(0, 0, 0, 0.1); }
   @media (max-width: 1000px) {
     .card {
       margin-top: 2rem;
       padding: 2rem;
-      width: 85vw; } }
+      width: 95%; } }
   .card p {
     max-width: 90%;
     margin: 1rem auto; }
@@ -209,14 +209,15 @@ a:hover {
   background-size: cover; }
   @media (max-width: 1000px) {
     .banner-container, .banner-bg, .banner-foot-bg, .banner-bg-review, .banner-bg-services, .banner-bg-about, .banner-bg-coaching {
-      max-height: 50vh;
+      min-height: 60vh;
       padding-bottom: 3rem; } }
 
 .banner-bg {
   background-image: url(../img/young-businesswoman-posing-with-copy-space.jpg); }
 
 .banner-foot-bg {
-  background-image: url(../img/agendar-servicio.jpg); }
+  background-image: url(../img/agendar-servicio.jpg);
+  height: 50px; }
 
 .banner-bg-review {
   background-image: url(../img/happy-diverse-business-partners-closing-deal.jpg); }
