@@ -172,8 +172,8 @@ a:hover {
     margin-top: 1rem;
   }
   img {
-    max-width: 30%;
-    max-height: 30%;
+    max-width: 7rem;
+   
   }
   h3 {
     top: 5%;
@@ -196,7 +196,20 @@ a:hover {
   }
   a{
     color: $opposite-color;
+ 
 }
+}
+.col-md-6{
+  padding-left: 0rem;
+  @media (max-width: 1000px){
+    padding-left: 0rem;
+  }
+}
+
+.contact-form{
+  >.col-md-6{
+    padding-left: 2rem;
+  }
 }
 
 .subtitle {
@@ -217,7 +230,7 @@ a:hover {
 }
 .motivation {
   position: relative;
-  height: 20rem; 
+  height: auto; 
   padding: 3rem;
   margin-bottom: 0 auto;
   opacity: 100%;
@@ -230,6 +243,13 @@ a:hover {
   color: $main-color;
   font-size: 4rem;
   text-shadow: 1px 1px #0d0d0d;
+  text-align: center
+}
+.motivation__name{
+  @extend .motivation__wrd;
+  margin-top: 2rem;
+  font-size: 3rem;
+  text-align: right;
 }
 
 
@@ -248,7 +268,11 @@ a:hover {
   background-color: $opposite-color;
   color: $main-color;
   width: 20rem;
-  margin-right: 1.5rem;
+  
+  @media (max-width: 447px){
+    width: 100%;
+    
+  }
 }
 
 .map iframe {

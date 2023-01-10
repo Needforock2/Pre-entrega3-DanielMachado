@@ -100,8 +100,7 @@ body {
     transition: all 0.3s ease-in-out; }
   @media (max-width: 1000px) {
     .navigation-foot > div > ul {
-      margin: 0 auto;
-      max-width: 10rem; } }
+      margin: 0 auto; } }
 
 .btn {
   font-size: 14px;
@@ -127,20 +126,33 @@ body {
   text-align: center;
   width: 40vw;
   border-radius: 1rem;
-  box-shadow: 4px 7px 7px 1px rgba(0, 0, 0, 0.1); }
+  box-shadow: 4px 7px 7px 1px rgba(0, 0, 0, 0.1);
+  min-height: 40rem; }
   @media (max-width: 1000px) {
     .card {
       margin-top: 2rem;
       padding: 2rem;
-      width: 95%; } }
+      width: 70%;
+      min-height: 47rem; } }
+  @media (max-width: 600px) {
+    .card {
+      margin-top: 2rem;
+      padding: 2rem;
+      width: 95%;
+      min-height: 47rem; } }
   .card p {
     max-width: 90%;
-    margin: 1rem auto; }
+    margin: 1rem auto;
+    font-size: 1.5rem; }
 
 .card__img {
   width: 10rem;
   height: 10rem;
   margin: 1rem auto; }
+  @media (max-width: 460px) {
+    .card__img {
+      width: 7rem;
+      height: 7rem; } }
 
 .card__ttl {
   margin: 1rem;
@@ -279,8 +291,7 @@ a:hover {
   .contact_clearbg div {
     margin-top: 1rem; }
   .contact_clearbg img {
-    max-width: 30%;
-    max-height: 30%; }
+    max-width: 7rem; }
   .contact_clearbg h3 {
     top: 5%;
     left: 15%; }
@@ -297,6 +308,15 @@ a:hover {
     font-size: 5rem; }
   .about a {
     color: #0D0D0D; }
+
+.col-md-6 {
+  padding-left: 0rem; }
+  @media (max-width: 1000px) {
+    .col-md-6 {
+      padding-left: 0rem; } }
+
+.contact-form > .col-md-6 {
+  padding-left: 2rem; }
 
 .subtitle {
   padding: 4rem;
@@ -316,17 +336,23 @@ a:hover {
 
 .motivation {
   position: relative;
-  height: 20rem;
+  height: auto;
   padding: 3rem;
   margin-bottom: 0 auto;
   opacity: 100%;
   max-width: 100%; }
 
-.motivation__wrd {
+.motivation__wrd, .motivation__name {
   position: relative;
   color: #F0F2F0;
   font-size: 4rem;
-  text-shadow: 1px 1px #0d0d0d; }
+  text-shadow: 1px 1px #0d0d0d;
+  text-align: center; }
+
+.motivation__name {
+  margin-top: 2rem;
+  font-size: 3rem;
+  text-align: right; }
 
 .form-control {
   padding: 1rem; }
@@ -341,8 +367,10 @@ a:hover {
   transition: all 0.3s ease-in-out;
   background-color: #0D0D0D;
   color: #F0F2F0;
-  width: 20rem;
-  margin-right: 1.5rem; }
+  width: 20rem; }
+  @media (max-width: 447px) {
+    .contactForm__btn {
+      width: 100%; } }
 
 .map iframe {
   display: block;
