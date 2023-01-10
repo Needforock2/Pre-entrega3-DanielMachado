@@ -1,13 +1,11 @@
-/*fuente principal Montserrat*/
-
 @import "colors.scss";
+/*fuente principal Montserrat*/
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import "body.scss";
 @import "header.scss";
 @import "footer.scss";
 @import "btn.scss";
 @import "card.scss";
-
 
 html {
   font-size: 62.5%;
@@ -46,8 +44,7 @@ li {
 }
 
 a:hover {
-  color: $main-color;
-  
+  color: $main-color;  
 }
 
 .p-4 {
@@ -66,7 +63,6 @@ a:hover {
 .nav-inferior {
   border-top: solid 1px $main-dark-color;
 }
-
 
 .section-title {
   text-transform: uppercase;
@@ -131,9 +127,7 @@ a:hover {
     align-items: center;
     font-size: 4rem;
     max-width: 90%;
-    padding-left: 0rem;
-    
-    
+    padding-left: 0rem;   
   }
 }
 .banner-title-foot {
@@ -151,9 +145,7 @@ a:hover {
     align-items: center;
     font-size: 4rem;
     max-width: 90%;
-    padding-left: 0rem;
-    
-    
+    padding-left: 0rem;   
   }
 }
 .contact_image {
@@ -180,9 +172,6 @@ a:hover {
     left: 15%;
   }
 }
-
-
-
 .services {
   padding: 2rem;
 }
@@ -195,8 +184,7 @@ a:hover {
     font-size: 5rem;
   }
   a{
-    color: $opposite-color;
- 
+    color: $opposite-color; 
 }
 }
 .col-md-6{
@@ -234,8 +222,7 @@ a:hover {
   padding: 3rem;
   margin-bottom: 0 auto;
   opacity: 100%;
-  max-width: 100%;
-  
+  max-width: 100%;  
 }
 
 .motivation__wrd {
@@ -251,12 +238,9 @@ a:hover {
   font-size: 3rem;
   text-align: right;
 }
-
-
 .form-control {
   padding: 1rem;
 }
-
 .contactForm__btn {
   font-size: 14px;
   text-transform: uppercase;
@@ -267,8 +251,7 @@ a:hover {
   transition: all 0.3s ease-in-out;
   background-color: $opposite-color;
   color: $main-color;
-  width: 20rem;
-  
+  width: 20rem;  
   @media (max-width: 447px){
     width: 100%;
     
@@ -280,7 +263,7 @@ a:hover {
   margin-top: 2rem;
   max-height: 30rem;
   width: 50vw;
-  @media (max-width: 1000px) {
+  @media (max-width: 767px) {
     width: 100vw;
   }
 }

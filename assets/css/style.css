@@ -377,7 +377,7 @@ a:hover {
   margin-top: 2rem;
   max-height: 30rem;
   width: 50vw; }
-  @media (max-width: 1000px) {
+  @media (max-width: 767px) {
     .map iframe {
       width: 100vw; } }
 
