@@ -113,15 +113,13 @@ a:hover {
   background-image: url(../img/aerial-view-business-team.jpg);
   @extend .banner-container;
 }
-.banner-title {
-  font-size: 1rem;
+@mixin title-font-style ($font-size, $max-width){
   padding-left: 3rem;
   color: $main-color;
   text-transform: uppercase;
   font-weight: 700;
-  font-size: 6rem;
-  text-shadow: 2px 2px 2px rgba(0,0,0,0.6);
-  max-width: 50%;
+  font-size: $font-size;
+  max-width: $max-width;
   @media (max-width: 1000px) {
     margin: 0 3rem;
     align-items: center;
@@ -130,23 +128,16 @@ a:hover {
     padding-left: 0rem;   
   }
 }
-.banner-title-foot {
-  
-  padding-left: 3rem;
-  color: $main-color;
-  text-transform: uppercase;
-  font-weight: 700;
-  font-size: 4rem;
-  text-shadow: 1px 1px #0d0d0d;
-  max-width: 60%;
+.banner-title {
+  @include title-font-style(6rem, 50%);  
+  text-shadow: 2px 2px 2px rgba(0,0,0,0.6);
+ 
+}
+.banner-title-foot {  
+  @include title-font-style(4rem, 60%);  
+  text-shadow: 1px 1px #0d0d0d;  
   text-align: center;
-  @media (max-width: 1000px) {
-    margin: 0 3rem;
-    align-items: center;
-    font-size: 4rem;
-    max-width: 90%;
-    padding-left: 0rem;   
-  }
+
 }
 .contact_image {
   padding: 0;
@@ -265,6 +256,7 @@ a:hover {
   width: 50vw;
   @media (max-width: 767px) {
     width: 100vw;
+    
   }
 }
 .carousel-inner{
